@@ -76,7 +76,7 @@ python code/analisis.py
  🤝 Kontribusi
 
 Silakan fork repo ini dan ajukan Pull Request!  
-Lihat [CONTRIBUTING.md](CONTRIBUTING.md) untuk panduan lengkap.
+Lihat .... untuk panduan lengkap.
 
 ---
 
