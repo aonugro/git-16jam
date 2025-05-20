@@ -1,0 +1,1216 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../24-babr21/">
+      
+      
+        <link rel="next" href="../26-babr23/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Bab 22 - Git 16 Jam</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Git 16 Jam" class="md-header__button md-logo" aria-label="Git 16 Jam" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Git 16 Jam
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bab 22
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Git 16 Jam" class="md-nav__button md-logo" aria-label="Git 16 Jam" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Git 16 Jam
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-pendahuluan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pendahuluan
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-pengantar-praktis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pengantar Praktis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-bab01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-bab02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-bab03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-bab04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-bab05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-bab06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-bab07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 7
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-bab08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 8
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-bab09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 9
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-bab10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 10
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-bab11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-bab12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 12
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-bab13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 13
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-bab14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 14
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-bab15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 15
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-bab16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 16
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-pengantar-reflek/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pengantar Refleksi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-babr17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 17
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-babr18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 18
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-babr19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 19
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-babr20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 20
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-babr21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 21
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 22
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26-babr23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 23
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27-babr24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bab 24
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28-ringkas-akhir/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ringkasan Akhir
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29-lampiran1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lampiran 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-lampiran2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lampiran 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../31-lampiran3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lampiran 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../32-lampiran4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lampiran 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../33-glosarium/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glosarium
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../34-pustaka/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Daftar Pustaka
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Bab 22</h1>
+
+<p>📚 Bab 22<br />
+ Kolaborasi Menulis Buku Digital dengan Git dan GitBook</p>
+<hr />
+<p>🧠 Menulis Buku: Tidak Harus Sendiri</p>
+<p>Di era digital, menulis buku bukan lagi pekerjaan soliter.<br />
+Kini, kita bisa menulis buku secara kolaboratif seperti membangun proyek perangkat lunak:<br />
+- Dengan tim<br />
+- Dengan pembagian tugas<br />
+- Dengan versi yang bisa ditelusuri<br />
+- Dan dengan dokumentasi yang rapi</p>
+<p>Git dan GitBook memberikan sarana untuk menjadikan proses ini terbuka, terstruktur, dan menyenangkan.</p>
+<p>Bab ini akan menunjukkan bagaimana kamu dan tim bisa menulis buku bersama—baik itu modul pelatihan, buku ajar, antologi esai, atau bahkan laporan riset—menggunakan workflow kolaboratif yang didukung Git dan GitBook.</p>
+<hr />
+<p>📘 Kenapa Git Cocok untuk Menulis Buku?</p>
+<p>Menulis buku, jika dipikir-pikir, sangat mirip dengan pengembangan kode:
+- Ada banyak file (bab)
+- Perlu struktur folder yang jelas
+- Perlu versi revisi dan riwayat perubahan
+- Sering melibatkan banyak kontributor</p>
+<p>Dengan Git:
+- Setiap perubahan ditelusuri
+- Setiap kontributor tercatat
+- Tiap bab bisa dikerjakan di branch sendiri
+- Penyatuan hasil (merge) dilakukan dengan Pull Request</p>
+<p>GitBook menambahkan:
+- Antarmuka baca yang nyaman
+- Navigasi bab otomatis
+- Link publik untuk distribusi</p>
+<hr />
+<p>🛠️ Struktur Dasar Proyek Buku</p>
+<p>Berikut contoh struktur folder untuk buku digital kolaboratif:</p>
+<pre><code>buku-digital/
+├── docs/
+│   ├── pendahuluan.md
+│   ├── bab1-digitalisasi.md
+│   ├── bab2-data.md
+│   ├── bab3-analitik.md
+│   └── penutup.md
+├── assets/
+│   └── gambar-cover.png
+├── README.md
+└── .gitignore
+</code></pre>
+<blockquote>
+<p>Setiap file <code>.md</code> di <code>docs/</code> akan menjadi satu bab di GitBook.</p>
+</blockquote>
+<hr />
+<p>👥 Kolaborasi: Pembagian Peran</p>
+<p>Contoh Tim Penulis:</p>
+<table>
+<thead>
+<tr>
+<th>Peran</th>
+<th>Tugas Utama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Penulis A</td>
+<td>Bab 1 dan revisi umum</td>
+</tr>
+<tr>
+<td>Penulis B</td>
+<td>Bab 2 dan referensi</td>
+</tr>
+<tr>
+<td>Penulis C</td>
+<td>Bab 3 dan infografik</td>
+</tr>
+<tr>
+<td>Editor</td>
+<td>Cek ejaan, gaya bahasa, konsistensi</td>
+</tr>
+<tr>
+<td>Admin Git</td>
+<td>Review PR, struktur folder, sinkronisasi</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>🔄 Workflow Kolaborasi Menulis</p>
+<ol>
+<li>
+<p>Fork atau clone repositori buku<br />
+   Setiap penulis bekerja di salinan yang sama</p>
+</li>
+<li>
+<p>Buat branch untuk bab masing-masing<br />
+   Contoh: <code>fitur/bab1-rafi</code>, <code>fitur/bab2-hana</code></p>
+</li>
+<li>
+<p>Tulis isi bab di file Markdown
+   Gunakan gaya yang konsisten</p>
+</li>
+<li>
+<p>Commit perubahan secara berkala<br />
+   Gunakan pesan commit seperti:<br />
+<code>tambah paragraf 2 tentang literasi digital</code></p>
+</li>
+<li>
+<p>Push dan ajukan Pull Request<br />
+   PR digunakan untuk review isi bab</p>
+</li>
+<li>
+<p>Editor memeriksa dan merge ke <code>main</code><br />
+   Setelah disetujui, bab akan tergabung ke buku utama</p>
+</li>
+<li>
+<p>GitBook otomatis memperbarui tampilan buku</p>
+</li>
+</ol>
+<hr />
+<p>✨ Tips Menulis Buku Kolaboratif</p>
+<ul>
+<li>Gunakan template Markdown bersama (judul, subjudul, kutipan)</li>
+<li>Setujui gaya bahasa dan istilah sejak awal</li>
+<li>Gunakan komentar di Pull Request untuk diskusi isi</li>
+<li>Jangan takut mengulang commit—Git menyimpan semua versi</li>
+<li>Revisi satu bab? Buat branch baru dan ajukan PR baru</li>
+</ul>
+<hr />
+<p>📖 Contoh Nyata: Modul Pelatihan Kolaboratif</p>
+<p>Sebuah komunitas data membuka proyek open-source:<br />
+“Buku Panduan Literasi Data untuk Guru”</p>
+<p>Tim terdiri dari:
+- Penulis kurikulum
+- Guru SD dan SMP
+- Desainer visual
+- Editor bahasa</p>
+<p>Mereka:
+- Membuat repositori GitHub publik
+- Menulis per bab di folder <code>docs/</code>
+- Menggunakan GitBook untuk preview
+- Mengadakan sesi review mingguan via PR</p>
+<p>Hasilnya?<br />
+Modul dapat dibaca publik, dikembangkan ulang, bahkan diterjemahkan oleh tim lain.</p>
+<hr />
+<p>🎁 Keuntungan Kolaborasi Buku via Git</p>
+<table>
+<thead>
+<tr>
+<th>Aspek</th>
+<th>Tanpa Git</th>
+<th>Dengan Git</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Versi revisi</td>
+<td>Sulit dilacak</td>
+<td>Otomatis dicatat</td>
+</tr>
+<tr>
+<td>Kolaborasi antar bab</td>
+<td>Campur aduk</td>
+<td>Jelas per branch dan file</td>
+</tr>
+<tr>
+<td>Riwayat perubahan</td>
+<td>Manual (nama file)</td>
+<td>Tersimpan sebagai commit</td>
+</tr>
+<tr>
+<td>Distribusi</td>
+<td>Manual kirim PDF</td>
+<td>Tautan GitBook publik</td>
+</tr>
+<tr>
+<td>Keterlibatan tim</td>
+<td>Pasif</td>
+<td>Aktif via PR dan komentar</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>✅ Checklist Bab Ini</p>
+<ul>
+<li>[ ] Saya memahami cara menyusun buku berbasis Git</li>
+<li>[ ] Saya tahu peran Git dalam mengatur penulisan kolaboratif</li>
+<li>[ ] Saya siap berkontribusi dalam format Markdown</li>
+<li>[ ] Saya tahu bagaimana menampilkan hasilnya di GitBook</li>
+</ul>
+<hr />
+<p>🚀 Bab Selanjutnya: Analisis Aktivitas Repositori dan Jejak Kolaborasi</p>
+<p>Di Bab 23, kita akan melihat bagaimana GitHub bisa menjadi alat refleksi, bukan hanya tempat kerja.<br />
+Kita akan belajar menganalisis kontribusi, aktivitas penulis, dan menyusun laporan kolaborasi dari log Git secara visual.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
