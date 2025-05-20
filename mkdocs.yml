@@ -3,37 +3,37 @@ theme:
   name: material
 
 nav:
-  - Pendahuluan: docs/01-pendahuluan.md
-  - Pengantar Praktis: docs/02-pengantar-praktis.md
-  - Bab 1: docs/03-bab01.md
-  - Bab 2: docs/04-bab02.md
-  - Bab 3: docs/05-bab03.md
-  - Bab 4: docs/06-bab04.md
-  - Bab 5: docs/07-bab05.md
-  - Bab 6: docs/08-bab06.md
-  - Bab 7: docs/09-bab07.md
-  - Bab 8: docs/10-bab08.md
-  - Bab 9: docs/11-bab09.md
-  - Bab 10: docs/12-bab10.md
-  - Bab 11: docs/13-bab11.md
-  - Bab 12: docs/14-bab12.md
-  - Bab 13: docs/15-bab13.md
-  - Bab 14: docs/16-bab14.md
-  - Bab 15: docs/17-bab15.md
-  - Bab 16: docs/18-bab16.md
-  - Pengantar Refleksi: docs/19-pengantar-reflek.md
-  - Bab 17: docs/20-babr17.md
-  - Bab 18: docs/21-babr18.md
-  - Bab 19: docs/22-babr19.md
-  - Bab 20: docs/23-babr20.md
-  - Bab 21: docs/24-babr21.md
-  - Bab 22: docs/25-babr22.md
-  - Bab 23: docs/26-babr23.md
-  - Bab 24: docs/27-babr24.md
-  - Ringkasan Akhir: docs/28-ringkas-akhir.md
-  - Lampiran 1: docs/29-lampiran1.md
-  - Lampiran 2: docs/30-lampiran2.md
-  - Lampiran 3: docs/31-lampiran3.md
-  - Lampiran 4: docs/32-lampiran4.md
-  - Glosarium: docs/33-glosarium.md
-  - Daftar Pustaka: docs/34-pustaka.md
+  - Pendahuluan: 01-pendahuluan.md
+  - Pengantar Praktis: 02-pengantar-praktis.md
+  - Bab 1: 03-bab01.md
+  - Bab 2: 04-bab02.md
+  - Bab 3: 05-bab03.md
+  - Bab 4: 06-bab04.md
+  - Bab 5: 07-bab05.md
+  - Bab 6: 08-bab06.md
+  - Bab 7: 09-bab07.md
+  - Bab 8: 10-bab08.md
+  - Bab 9: 11-bab09.md
+  - Bab 10: 12-bab10.md
+  - Bab 11: 13-bab11.md
+  - Bab 12: 14-bab12.md
+  - Bab 13: 15-bab13.md
+  - Bab 14: 16-bab14.md
+  - Bab 15: 17-bab15.md
+  - Bab 16: 18-bab16.md
+  - Pengantar Refleksi: 19-pengantar-reflek.md
+  - Bab 17: 20-babr17.md
+  - Bab 18: 21-babr18.md
+  - Bab 19: 22-babr19.md
+  - Bab 20: 23-babr20.md
+  - Bab 21: 24-babr21.md
+  - Bab 22: 25-babr22.md
+  - Bab 23: 26-babr23.md
+  - Bab 24: 27-babr24.md
+  - Ringkasan Akhir: 28-ringkas-akhir.md
+  - Lampiran 1: 29-lampiran1.md
+  - Lampiran 2: 30-lampiran2.md
+  - Lampiran 3: 31-lampiran3.md
+  - Lampiran 4: 32-lampiran4.md
+  - Glosarium: 33-glosarium.md
+  - Daftar Pustaka: 34-pustaka.md
